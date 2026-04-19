@@ -1,0 +1,19 @@
+---
+title: "about"
+editor: visual
+---
+
+# About Me
+
+My name is Brandon Bishop, and I am building skills in environmental data analytics with a focus on water quality, environmental interpretation, and applied statistical analysis in R. My academic background is in environmental science, and my current work is focused on developing practical data analysis skills that can be applied to environmental datasets and real-world resource issues.
+
+This portfolio highlights selected projects that demonstrate data cleaning, statistical analysis, visualization, and reproducible workflow organization. My interests include water quality, environmental monitoring, and using data to better understand environmental conditions and support decision-making.
+
+## Skills and Interests
+
+-   Environmental data analysis
+-   Water quality interpretation
+-   Statistical testing in R
+-   Data visualization
+-   Reproducible project organization
+-   Applied environmental science

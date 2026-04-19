@@ -1,0 +1,21 @@
+project:
+  type: website
+  output-dir: docs
+  resources:
+    - figures/**
+
+website:
+  title: "Brandon Bishop Portfolio"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: about.qmd
+        text: About Me
+      - href: README.qmd
+        text: Water Quality Project
+
+format:
+  html:
+    theme: cosmo
+    toc: true

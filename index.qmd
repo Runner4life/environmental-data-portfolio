@@ -1,0 +1,29 @@
+---
+title: "Home"
+format: html
+editor: visual
+---
+
+---
+title: "Home"
+---
+
+# Brandon Bishop
+
+Welcome to my environmental data analytics portfolio. This site highlights selected R-based projects focused on water quality analysis, environmental data interpretation, and scientific visualization.
+
+## Featured Project
+
+### Virginia Stream Water Quality Analysis Using R
+
+This project analyzes Virginia stream water quality data with a focus on nitrate concentrations. It includes data cleaning, descriptive statistics, ANOVA, chi-square analysis, and professional visualizations created in R.
+
+[View the project](README.html)
+
+## Skills Featured
+
+-   Data cleaning and wrangling in R
+-   Environmental data analysis
+-   Statistical testing
+-   Data visualization
+-   Reproducible project organization
