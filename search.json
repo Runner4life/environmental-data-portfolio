@@ -1,5 +1,103 @@
 [
   {
+    "objectID": "water-quality-project.html",
+    "href": "water-quality-project.html",
+    "title": "Virginia Stream Water Quality Analysis Using R",
+    "section": "",
+    "text": "This project analyzes Virginia stream water quality data in R, with a primary focus on nitrate concentrations. The completed analysis examined whether nitrate concentrations differed across latitude zones, whether nitrate category distribution was associated with latitude zone, and how nitrate concentrations varied spatially across monitoring locations."
+  },
+  {
+    "objectID": "water-quality-project.html#overview",
+    "href": "water-quality-project.html#overview",
+    "title": "Virginia Stream Water Quality Analysis Using R",
+    "section": "",
+    "text": "This project analyzes Virginia stream water quality data in R, with a primary focus on nitrate concentrations. The completed analysis examined whether nitrate concentrations differed across latitude zones, whether nitrate category distribution was associated with latitude zone, and how nitrate concentrations varied spatially across monitoring locations."
+  },
+  {
+    "objectID": "water-quality-project.html#skills-demonstrated",
+    "href": "water-quality-project.html#skills-demonstrated",
+    "title": "Virginia Stream Water Quality Analysis Using R",
+    "section": "Skills Demonstrated",
+    "text": "Skills Demonstrated\nThis project demonstrates data cleaning, data wrangling, categorical variable creation, descriptive statistics, inferential statistics, spatial summary, and professional data visualization in R. It also reflects reproducible workflow organization through separate folders for raw data, figures, scripts, and outputs."
+  },
+  {
+    "objectID": "water-quality-project.html#research-questions",
+    "href": "water-quality-project.html#research-questions",
+    "title": "Virginia Stream Water Quality Analysis Using R",
+    "section": "Research Questions",
+    "text": "Research Questions\n\nDo nitrate concentrations differ across latitude zones in Virginia streams?\nIs nitrate category distribution associated with latitude zone?\nHow do nitrate concentrations vary spatially across Virginia stream monitoring locations?"
+  },
+  {
+    "objectID": "water-quality-project.html#data-source",
+    "href": "water-quality-project.html#data-source",
+    "title": "Virginia Stream Water Quality Analysis Using R",
+    "section": "Data Source",
+    "text": "Data Source\nThe dataset was derived from Virginia stream water quality records obtained from the Water Quality Portal. The downloaded data included records from NWIS and STORET providers for the period March 18, 2024 through March 5, 2026. The analysis focused specifically on nitrate observations from Virginia stream monitoring locations."
+  },
+  {
+    "objectID": "water-quality-project.html#methods",
+    "href": "water-quality-project.html#methods",
+    "title": "Virginia Stream Water Quality Analysis Using R",
+    "section": "Methods",
+    "text": "Methods\nThe analysis was completed in R using a reproducible workflow that included data import, cleaning, transformation, descriptive statistics, visualization, statistical testing, spatial summary, and export. Column names were standardized, the dataset was filtered to nitrate observations with valid coordinates and non-missing concentration values, and key variables were converted to the correct formats.\nLatitude values were divided into three zones: South, Central, and North. Nitrate concentrations were also classified into three groups: low for values below 1 mg/L, medium for values from 1 to less than 3 mg/L, and high for values of 3 mg/L or greater.\nDescriptive statistics were calculated for the full nitrate dataset and by latitude zone. A one-way analysis of variance was used to compare nitrate concentrations across latitude zones, followed by estimated marginal means and Tukey-adjusted pairwise comparisons. A chi-square test of independence was used to evaluate whether nitrate group distribution differed by latitude zone. Monitoring locations were also summarized spatially using mean nitrate concentration and sample size."
+  },
+  {
+    "objectID": "water-quality-project.html#results",
+    "href": "water-quality-project.html#results",
+    "title": "Virginia Stream Water Quality Analysis Using R",
+    "section": "Results",
+    "text": "Results\nDescriptive statistics showed that mean nitrate concentration was highest in the North zone, followed by the South and Central zones. The North zone had both the highest mean nitrate concentration and the highest maximum nitrate value.\nThe histogram showed that nitrate concentrations were concentrated near lower values, with fewer observations at higher concentrations. The boxplot showed that the North zone had more elevated observations and a higher group mean than the South and Central zones.\nThe analysis of variance indicated a statistically significant difference in nitrate concentration among latitude zones. Tukey-adjusted pairwise comparisons supported the visual pattern, with the North zone showing higher nitrate concentrations than the South and Central zones.\nThe chi-square analysis showed that nitrate category distribution differed by latitude zone. Low nitrate observations were the majority in all zones, but the North zone had a substantially larger proportion of medium and high nitrate observations.\nThe spatial summary and map showed that higher mean nitrate concentrations were more common in northern and north-central monitoring locations, while many southern and southwestern locations had lower mean nitrate values."
+  },
+  {
+    "objectID": "water-quality-project.html#key-findings",
+    "href": "water-quality-project.html#key-findings",
+    "title": "Virginia Stream Water Quality Analysis Using R",
+    "section": "Key Findings",
+    "text": "Key Findings\nThe completed analysis showed that nitrate concentrations were not evenly distributed across the study area. The North zone consistently showed the strongest evidence of elevated nitrate conditions, both in terms of mean concentration and the relative frequency of medium and high nitrate observations. Spatial plotting also showed that elevated nitrate conditions were clustered in certain monitoring areas rather than evenly distributed across Virginia stream sites."
+  },
+  {
+    "objectID": "water-quality-project.html#limitations",
+    "href": "water-quality-project.html#limitations",
+    "title": "Virginia Stream Water Quality Analysis Using R",
+    "section": "Limitations",
+    "text": "Limitations\nThis project used an observational water quality dataset, so the results identify patterns rather than cause-and-effect relationships. Sampling effort may not have been equal across all monitoring locations, and regional differences may partly reflect uneven sampling density, land use patterns, or other unmeasured environmental influences."
+  },
+  {
+    "objectID": "water-quality-project.html#project-files",
+    "href": "water-quality-project.html#project-files",
+    "title": "Virginia Stream Water Quality Analysis Using R",
+    "section": "Project Files",
+    "text": "Project Files\nKey files for this project include the final R analysis script, exported summary tables, the cleaned nitrate analysis dataset, and publication-quality figures. The workflow was organized so that data import, cleaning, visualization, statistical analysis, and export were handled reproducibly in R."
+  },
+  {
+    "objectID": "water-quality-project.html#tools-used",
+    "href": "water-quality-project.html#tools-used",
+    "title": "Virginia Stream Water Quality Analysis Using R",
+    "section": "Tools Used",
+    "text": "Tools Used\nR, RStudio, tidyverse, readr, janitor, here, lubridate, ggplot2, emmeans, writexl, descriptive statistics, ANOVA, Tukey-adjusted pairwise comparisons, chi-square test, and spatial plotting"
+  },
+  {
+    "objectID": "water-quality-project.html#figures",
+    "href": "water-quality-project.html#figures",
+    "title": "Virginia Stream Water Quality Analysis Using R",
+    "section": "Figures",
+    "text": "Figures"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "about",
+    "section": "",
+    "text": "My name is Brandon Bishop, and I am building skills in environmental data analytics with a focus on water quality, environmental interpretation, and applied statistical analysis in R. My academic background is in environmental science, and my current work is focused on developing practical data analysis skills that can be applied to environmental datasets and real-world resource issues.\nThis portfolio highlights selected projects that demonstrate data cleaning, statistical analysis, visualization, and reproducible workflow organization. My interests include water quality, environmental monitoring, and using data to better understand environmental conditions and support decision-making.\n\n\n\nEnvironmental data analysis\nWater quality interpretation\nStatistical testing in R\nData visualization\nReproducible project organization\nApplied environmental science"
+  },
+  {
+    "objectID": "about.html#skills-and-interests",
+    "href": "about.html#skills-and-interests",
+    "title": "about",
+    "section": "",
+    "text": "Environmental data analysis\nWater quality interpretation\nStatistical testing in R\nData visualization\nReproducible project organization\nApplied environmental science"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Home",
@@ -19,19 +117,5 @@
     "title": "Home",
     "section": "",
     "text": "Data cleaning and wrangling in R\nEnvironmental data analysis\nStatistical testing\nData visualization\nReproducible project organization"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "about",
-    "section": "",
-    "text": "My name is Brandon Bishop, and I am building skills in environmental data analytics with a focus on water quality, environmental interpretation, and applied statistical analysis in R. My academic background is in environmental science, and my current work is focused on developing practical data analysis skills that can be applied to environmental datasets and real-world resource issues.\nThis portfolio highlights selected projects that demonstrate data cleaning, statistical analysis, visualization, and reproducible workflow organization. My interests include water quality, environmental monitoring, and using data to better understand environmental conditions and support decision-making.\n\n\n\nEnvironmental data analysis\nWater quality interpretation\nStatistical testing in R\nData visualization\nReproducible project organization\nApplied environmental science"
-  },
-  {
-    "objectID": "about.html#skills-and-interests",
-    "href": "about.html#skills-and-interests",
-    "title": "about",
-    "section": "",
-    "text": "Environmental data analysis\nWater quality interpretation\nStatistical testing in R\nData visualization\nReproducible project organization\nApplied environmental science"
   }
 ]
