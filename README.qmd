@@ -5,58 +5,71 @@ format: html
 editor: visual
 ---
 
+---
+title: "Virginia Stream Water Quality Analysis Using R"
+format: html
+---
+
 ## Overview
 
-This project analyzes Virginia stream water quality data using R, with a primary focus on nitrate concentrations. The purpose of the analysis was to examine how nitrate values were distributed across the dataset, determine whether nitrate concentrations differed by latitude zone, and evaluate whether nitrate category membership was associated with latitude zone.
+This project analyzes Virginia stream water quality data in R, with a primary focus on nitrate concentrations. The completed analysis examined whether nitrate concentrations differed across latitude zones, whether nitrate category distribution was associated with latitude zone, and how nitrate concentrations varied spatially across monitoring locations.
 
 ## Skills Demonstrated
 
-This project demonstrates data cleaning, data wrangling, categorical variable creation, descriptive statistics, inferential statistics, and professional data visualization in R. It also shows the use of reproducible project organization through separate folders for data, scripts, figures, and outputs.
+This project demonstrates data cleaning, data wrangling, categorical variable creation, descriptive statistics, inferential statistics, spatial summary, and professional data visualization in R. It also reflects reproducible workflow organization through separate folders for raw data, figures, scripts, and outputs.
 
 ## Research Questions
 
-1.  How are nitrate concentrations distributed across the dataset?
-2.  Do nitrate concentrations differ by latitude zone?
-3.  Is nitrate group associated with latitude zone?
+1.  Do nitrate concentrations differ across latitude zones in Virginia streams?
+2.  Is nitrate category distribution associated with latitude zone?
+3.  How do nitrate concentrations vary spatially across Virginia stream monitoring locations?
 
 ## Data Source
 
-The dataset was derived from Water Quality Portal records that were cleaned and prepared for analysis in R. The working dataset included nitrate observations along with latitude zone classifications and related site information.
+The dataset was derived from Virginia stream water quality records obtained from the Water Quality Portal. The downloaded data included records from NWIS and STORET providers for the period March 18, 2024 through March 5, 2026. The analysis focused specifically on nitrate observations from Virginia stream monitoring locations.
 
 ## Methods
 
-The analysis was conducted in R using a cleaned observation-level dataset. Nitrate observations were filtered from the larger water quality file, and nitrate concentrations were converted to numeric values for analysis. A categorical nitrate grouping variable was created using the following thresholds: low for values less than 1 mg/L, medium for values from 1 to 3 mg/L, and high for values greater than 3 mg/L.
+The analysis was completed in R using a reproducible workflow that included data import, cleaning, transformation, descriptive statistics, visualization, statistical testing, spatial summary, and export. Column names were standardized, the dataset was filtered to nitrate observations with valid coordinates and non-missing concentration values, and key variables were converted to the correct formats.
 
-Descriptive statistics were calculated by latitude zone, including the mean, median, standard deviation, sample size, and standard error. A one-way analysis of variance was used to test whether nitrate concentrations differed across latitude zones. A chi-square test of independence was used to examine whether nitrate group membership was associated with latitude zone. Visualizations were created with ggplot2 to display the distribution of nitrate concentrations, differences by latitude zone, and the frequency of nitrate groups across regions.
+Latitude values were divided into three zones: South, Central, and North. Nitrate concentrations were also classified into three groups: low for values below 1 mg/L, medium for values from 1 to less than 3 mg/L, and high for values of 3 mg/L or greater.
+
+Descriptive statistics were calculated for the full nitrate dataset and by latitude zone. A one-way analysis of variance was used to compare nitrate concentrations across latitude zones, followed by estimated marginal means and Tukey-adjusted pairwise comparisons. A chi-square test of independence was used to evaluate whether nitrate group distribution differed by latitude zone. Monitoring locations were also summarized spatially using mean nitrate concentration and sample size.
 
 ## Results
 
-The histogram showed that nitrate concentrations were concentrated at lower values, with fewer observations at higher concentrations. The boxplot indicated that nitrate concentrations varied across latitude zones, with the North zone showing a higher center and greater spread than the South and Central zones.
+Descriptive statistics showed that mean nitrate concentration was highest in the North zone, followed by the South and Central zones. The North zone had both the highest mean nitrate concentration and the highest maximum nitrate value.
 
-The analysis of variance showed a statistically significant difference in nitrate concentration among latitude zones, *F*(2, 3734) = 195.3, *p* \< .001. Mean nitrate concentration was highest in the North zone relative to the South and Central zones.
+The histogram showed that nitrate concentrations were concentrated near lower values, with fewer observations at higher concentrations. The boxplot showed that the North zone had more elevated observations and a higher group mean than the South and Central zones.
 
-The chi-square test also showed a statistically significant association between nitrate group and latitude zone, χ²(4) = 432.87, *p* \< .001. Low nitrate observations were most common overall, but the North zone contained a noticeably larger number of medium and high nitrate observations than the other zones.
+The analysis of variance indicated a statistically significant difference in nitrate concentration among latitude zones. Tukey-adjusted pairwise comparisons supported the visual pattern, with the North zone showing higher nitrate concentrations than the South and Central zones.
+
+The chi-square analysis showed that nitrate category distribution differed by latitude zone. Low nitrate observations were the majority in all zones, but the North zone had a substantially larger proportion of medium and high nitrate observations.
+
+The spatial summary and map showed that higher mean nitrate concentrations were more common in northern and north-central monitoring locations, while many southern and southwestern locations had lower mean nitrate values.
 
 ## Key Findings
 
-The results suggest that nitrate concentrations were not evenly distributed across the study area. Most observations fell within the low nitrate category, but the North zone showed a greater concentration of elevated nitrate values. Together, the statistical tests and visualizations indicate meaningful geographic differences in nitrate conditions across Virginia stream observations in this dataset.
+The completed analysis showed that nitrate concentrations were not evenly distributed across the study area. The North zone consistently showed the strongest evidence of elevated nitrate conditions, both in terms of mean concentration and the relative frequency of medium and high nitrate observations. Spatial plotting also showed that elevated nitrate conditions were clustered in certain monitoring areas rather than evenly distributed across Virginia stream sites.
 
 ## Limitations
 
-This project used an observational dataset, so the results identify patterns rather than cause-and-effect relationships. Sampling effort may not have been equal across all locations, and differences among latitude zones may partly reflect sampling density, land use variation, or other unmeasured factors. In addition, this project focused on nitrate only and did not evaluate interactions with other water quality variables.
+This project used an observational water quality dataset, so the results identify patterns rather than cause-and-effect relationships. Sampling effort may not have been equal across all monitoring locations, and regional differences may partly reflect uneven sampling density, land use patterns, or other unmeasured environmental influences.
 
 ## Project Files
 
-Key files for this project include the cleaned dataset, analysis scripts, output tables, and exported figures. The workflow was organized so that data import, analysis, and figure creation were separated into individual scripts to improve clarity and reproducibility.
+Key files for this project include the final R analysis script, exported summary tables, the cleaned nitrate analysis dataset, and publication-quality figures. The workflow was organized so that data import, cleaning, visualization, statistical analysis, and export were handled reproducibly in R.
 
 ## Tools Used
 
-R, RStudio, tidyverse, ggplot2, dplyr, janitor, here, descriptive statistics, ANOVA, chi-square test
+R, RStudio, tidyverse, readr, janitor, here, lubridate, ggplot2, emmeans, writexl, descriptive statistics, ANOVA, Tukey-adjusted pairwise comparisons, chi-square test, and spatial plotting
 
 ## Figures
 
-<img src="figures/histogram_nitrate.png" width="900"/>
+![](figures/figure_1_nitrate_histogram.png)
 
-<img src="figures/boxplot_nitrate_latitude.png" width="900"/>
+![](figures/figure_2_nitrate_by_latitude_zone.png)
 
-<img src="figures/barplot_nitrate_groups.png" width="900"/>
+![](figures/figure_3_nitrate_group_by_latitude_zone.png)
+
+![](figures/figure_4_spatial_nitrate_pattern.png)
