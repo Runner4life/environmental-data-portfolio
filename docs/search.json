@@ -1,0 +1,37 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Home",
+    "section": "",
+    "text": "Welcome to my environmental data analytics portfolio. This site highlights selected R-based projects focused on water quality analysis, environmental data interpretation, and scientific visualization.\n\n\n\n\nThis project analyzes Virginia stream water quality data with a focus on nitrate concentrations. It includes data cleaning, descriptive statistics, ANOVA, chi-square analysis, and professional visualizations created in R.\nView the project\n\n\n\n\n\nData cleaning and wrangling in R\nEnvironmental data analysis\nStatistical testing\nData visualization\nReproducible project organization"
+  },
+  {
+    "objectID": "index.html#featured-project",
+    "href": "index.html#featured-project",
+    "title": "Home",
+    "section": "",
+    "text": "This project analyzes Virginia stream water quality data with a focus on nitrate concentrations. It includes data cleaning, descriptive statistics, ANOVA, chi-square analysis, and professional visualizations created in R.\nView the project"
+  },
+  {
+    "objectID": "index.html#skills-featured",
+    "href": "index.html#skills-featured",
+    "title": "Home",
+    "section": "",
+    "text": "Data cleaning and wrangling in R\nEnvironmental data analysis\nStatistical testing\nData visualization\nReproducible project organization"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "about",
+    "section": "",
+    "text": "My name is Brandon Bishop, and I am building skills in environmental data analytics with a focus on water quality, environmental interpretation, and applied statistical analysis in R. My academic background is in environmental science, and my current work is focused on developing practical data analysis skills that can be applied to environmental datasets and real-world resource issues.\nThis portfolio highlights selected projects that demonstrate data cleaning, statistical analysis, visualization, and reproducible workflow organization. My interests include water quality, environmental monitoring, and using data to better understand environmental conditions and support decision-making.\n\n\n\nEnvironmental data analysis\nWater quality interpretation\nStatistical testing in R\nData visualization\nReproducible project organization\nApplied environmental science"
+  },
+  {
+    "objectID": "about.html#skills-and-interests",
+    "href": "about.html#skills-and-interests",
+    "title": "about",
+    "section": "",
+    "text": "Environmental data analysis\nWater quality interpretation\nStatistical testing in R\nData visualization\nReproducible project organization\nApplied environmental science"
+  }
+]
