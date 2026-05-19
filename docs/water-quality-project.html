@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Brandon Bishop">
 
-<title>Home – Brandon Bishop Portfolio</title>
+<title>Virginia Stream Water Quality Analysis Using R – Brandon Bishop Portfolio</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -92,7 +93,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="./index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
@@ -100,7 +101,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">About Me</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./water-quality-project.html"> 
+    <a class="nav-link active" href="./water-quality-project.html" aria-current="page"> 
 <span class="menu-text">Water Quality Project</span></a>
   </li>  
 </ul>
@@ -119,14 +120,17 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#brandon-bishop" id="toc-brandon-bishop" class="nav-link active" data-scroll-target="#brandon-bishop">Brandon Bishop</a>
-  <ul class="collapse">
-  <li><a href="#featured-project" id="toc-featured-project" class="nav-link" data-scroll-target="#featured-project">Featured Project</a>
-  <ul class="collapse">
-  <li><a href="#virginia-stream-water-quality-analysis-using-r" id="toc-virginia-stream-water-quality-analysis-using-r" class="nav-link" data-scroll-target="#virginia-stream-water-quality-analysis-using-r">Virginia Stream Water Quality Analysis Using R</a></li>
-  </ul></li>
-  <li><a href="#skills-featured" id="toc-skills-featured" class="nav-link" data-scroll-target="#skills-featured">Skills Featured</a></li>
-  </ul></li>
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#skills-demonstrated" id="toc-skills-demonstrated" class="nav-link" data-scroll-target="#skills-demonstrated">Skills Demonstrated</a></li>
+  <li><a href="#research-questions" id="toc-research-questions" class="nav-link" data-scroll-target="#research-questions">Research Questions</a></li>
+  <li><a href="#data-source" id="toc-data-source" class="nav-link" data-scroll-target="#data-source">Data Source</a></li>
+  <li><a href="#methods" id="toc-methods" class="nav-link" data-scroll-target="#methods">Methods</a></li>
+  <li><a href="#results" id="toc-results" class="nav-link" data-scroll-target="#results">Results</a></li>
+  <li><a href="#key-findings" id="toc-key-findings" class="nav-link" data-scroll-target="#key-findings">Key Findings</a></li>
+  <li><a href="#limitations" id="toc-limitations" class="nav-link" data-scroll-target="#limitations">Limitations</a></li>
+  <li><a href="#project-files" id="toc-project-files" class="nav-link" data-scroll-target="#project-files">Project Files</a></li>
+  <li><a href="#tools-used" id="toc-tools-used" class="nav-link" data-scroll-target="#tools-used">Tools Used</a></li>
+  <li><a href="#figures" id="toc-figures" class="nav-link" data-scroll-target="#figures">Figures</a></li>
   </ul>
 </nav>
     </div>
@@ -135,13 +139,19 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Home</h1>
+<h1 class="title">Virginia Stream Water Quality Analysis Using R</h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Brandon Bishop </p>
+          </div>
+  </div>
     
   
     
@@ -152,29 +162,64 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="brandon-bishop" class="level1">
-<h1>Brandon Bishop</h1>
-<p>Welcome to my environmental data analytics portfolio. This site highlights selected R-based projects focused on water quality analysis, environmental data interpretation, and scientific visualization.</p>
-<section id="featured-project" class="level2">
-<h2 class="anchored" data-anchor-id="featured-project">Featured Project</h2>
-<section id="virginia-stream-water-quality-analysis-using-r" class="level3">
-<h3 class="anchored" data-anchor-id="virginia-stream-water-quality-analysis-using-r">Virginia Stream Water Quality Analysis Using R</h3>
-<p>This project analyzes Virginia stream water quality data with a focus on nitrate concentrations. It includes data cleaning, descriptive statistics, ANOVA, chi-square analysis, and professional visualizations created in R.</p>
-<p><a href="water-quality-project.html">View the project</a></p>
+<section id="overview" class="level2">
+<h2 class="anchored" data-anchor-id="overview">Overview</h2>
+<p>This project analyzes Virginia stream water quality data in R, with a primary focus on nitrate concentrations. The completed analysis examined whether nitrate concentrations differed across latitude zones, whether nitrate category distribution was associated with latitude zone, and how nitrate concentrations varied spatially across monitoring locations.</p>
 </section>
+<section id="skills-demonstrated" class="level2">
+<h2 class="anchored" data-anchor-id="skills-demonstrated">Skills Demonstrated</h2>
+<p>This project demonstrates data cleaning, data wrangling, categorical variable creation, descriptive statistics, inferential statistics, spatial summary, and professional data visualization in R. It also reflects reproducible workflow organization through separate folders for raw data, figures, scripts, and outputs.</p>
 </section>
-<section id="skills-featured" class="level2">
-<h2 class="anchored" data-anchor-id="skills-featured">Skills Featured</h2>
-<ul>
-<li>Data cleaning and wrangling in R</li>
-<li>Environmental data analysis</li>
-<li>Statistical testing</li>
-<li>Data visualization</li>
-<li>Reproducible project organization</li>
-</ul>
+<section id="research-questions" class="level2">
+<h2 class="anchored" data-anchor-id="research-questions">Research Questions</h2>
+<ol type="1">
+<li>Do nitrate concentrations differ across latitude zones in Virginia streams?</li>
+<li>Is nitrate category distribution associated with latitude zone?</li>
+<li>How do nitrate concentrations vary spatially across Virginia stream monitoring locations?</li>
+</ol>
+</section>
+<section id="data-source" class="level2">
+<h2 class="anchored" data-anchor-id="data-source">Data Source</h2>
+<p>The dataset was derived from Virginia stream water quality records obtained from the Water Quality Portal. The downloaded data included records from NWIS and STORET providers for the period March 18, 2024 through March 5, 2026. The analysis focused specifically on nitrate observations from Virginia stream monitoring locations.</p>
+</section>
+<section id="methods" class="level2">
+<h2 class="anchored" data-anchor-id="methods">Methods</h2>
+<p>The analysis was completed in R using a reproducible workflow that included data import, cleaning, transformation, descriptive statistics, visualization, statistical testing, spatial summary, and export. Column names were standardized, the dataset was filtered to nitrate observations with valid coordinates and non-missing concentration values, and key variables were converted to the correct formats.</p>
+<p>Latitude values were divided into three zones: South, Central, and North. Nitrate concentrations were also classified into three groups: low for values below 1 mg/L, medium for values from 1 to less than 3 mg/L, and high for values of 3 mg/L or greater.</p>
+<p>Descriptive statistics were calculated for the full nitrate dataset and by latitude zone. A one-way analysis of variance was used to compare nitrate concentrations across latitude zones, followed by estimated marginal means and Tukey-adjusted pairwise comparisons. A chi-square test of independence was used to evaluate whether nitrate group distribution differed by latitude zone. Monitoring locations were also summarized spatially using mean nitrate concentration and sample size.</p>
+</section>
+<section id="results" class="level2">
+<h2 class="anchored" data-anchor-id="results">Results</h2>
+<p>Descriptive statistics showed that mean nitrate concentration was highest in the North zone, followed by the South and Central zones. The North zone had both the highest mean nitrate concentration and the highest maximum nitrate value.</p>
+<p>The histogram showed that nitrate concentrations were concentrated near lower values, with fewer observations at higher concentrations. The boxplot showed that the North zone had more elevated observations and a higher group mean than the South and Central zones.</p>
+<p>The analysis of variance indicated a statistically significant difference in nitrate concentration among latitude zones. Tukey-adjusted pairwise comparisons supported the visual pattern, with the North zone showing higher nitrate concentrations than the South and Central zones.</p>
+<p>The chi-square analysis showed that nitrate category distribution differed by latitude zone. Low nitrate observations were the majority in all zones, but the North zone had a substantially larger proportion of medium and high nitrate observations.</p>
+<p>The spatial summary and map showed that higher mean nitrate concentrations were more common in northern and north-central monitoring locations, while many southern and southwestern locations had lower mean nitrate values.</p>
+</section>
+<section id="key-findings" class="level2">
+<h2 class="anchored" data-anchor-id="key-findings">Key Findings</h2>
+<p>The completed analysis showed that nitrate concentrations were not evenly distributed across the study area. The North zone consistently showed the strongest evidence of elevated nitrate conditions, both in terms of mean concentration and the relative frequency of medium and high nitrate observations. Spatial plotting also showed that elevated nitrate conditions were clustered in certain monitoring areas rather than evenly distributed across Virginia stream sites.</p>
+</section>
+<section id="limitations" class="level2">
+<h2 class="anchored" data-anchor-id="limitations">Limitations</h2>
+<p>This project used an observational water quality dataset, so the results identify patterns rather than cause-and-effect relationships. Sampling effort may not have been equal across all monitoring locations, and regional differences may partly reflect uneven sampling density, land use patterns, or other unmeasured environmental influences.</p>
+</section>
+<section id="project-files" class="level2">
+<h2 class="anchored" data-anchor-id="project-files">Project Files</h2>
+<p>Key files for this project include the final R analysis script, exported summary tables, the cleaned nitrate analysis dataset, and publication-quality figures. The workflow was organized so that data import, cleaning, visualization, statistical analysis, and export were handled reproducibly in R.</p>
+</section>
+<section id="tools-used" class="level2">
+<h2 class="anchored" data-anchor-id="tools-used">Tools Used</h2>
+<p>R, RStudio, tidyverse, readr, janitor, here, lubridate, ggplot2, emmeans, writexl, descriptive statistics, ANOVA, Tukey-adjusted pairwise comparisons, chi-square test, and spatial plotting</p>
+</section>
+<section id="figures" class="level2">
+<h2 class="anchored" data-anchor-id="figures">Figures</h2>
+<p><img src="figures/figure_1_nitrate_histogram.png" class="img-fluid"></p>
+<p><img src="figures/figure_2_nitrate_by_latitude_zone.png" class="img-fluid"></p>
+<p><img src="figures/figure_3_nitrate_group_by_latitude_zone.png" class="img-fluid"></p>
+<p><img src="figures/figure_4_spatial_nitrate_pattern.png" class="img-fluid"></p>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
